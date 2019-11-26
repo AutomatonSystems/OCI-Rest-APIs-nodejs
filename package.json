@@ -1,0 +1,33 @@
+{
+  "name": "oci-rest-apis-nodejs",
+  "version": "0.0.1",
+  "description": "Oracle Cloud Infrastructure REST APIs implemented in node.js.",
+  "main": "oci.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuzziebrain/OCI-Rest-APIs-nodejs.git"
+  },
+  "keywords": [
+    "oci",
+    "oracle",
+    "cloud",
+    "infrastructure",
+    "rest",
+    "api"
+  ],
+  "author": "christopherbeck (https://github.com/christopherbeck)",
+  "contributors": [
+    "Adrian Png (https://github.com/fuzziebrain)"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/fuzziebrain/OCI-Rest-APIs-nodejs/issues"
+  },
+  "homepage": "https://github.com/fuzziebrain/OCI-Rest-APIs-nodejs#readme"
+}
