@@ -61,21 +61,20 @@ function handleResponse( callback ) {
     response.on( 'data', function(chunk) { 
       if( contentType == 'application/json' )
         JSONBody += chunk; 
-      if( contentType == 'application/x-www-form-urlencoded' )
+      else if( contentType == 'application/x-www-form-urlencoded' )
         buffer.push( Buffer.from( chunk, 'binary' ) );
-      if( contentType == 'application/octet-stream' )
+      else
         buffer.push( chunk );
     });
 
     response.on( 'end', function() {
-      if ( contentType == 'application/x-www-form-urlencoded' ||
-           contentType == 'application/octet-stream' )
-      {
+	  if ( contentType == 'application/json' && JSONBody != '' ){
+		  callback(JSON.parse( JSONBody ));
+	  }else{
         var binary = Buffer.concat(buffer);
         callback(binary);
       }
-      if ( contentType == 'application/json' && JSONBody != '' )
-        callback(JSON.parse( JSONBody ));
+     
     });
 
   }
