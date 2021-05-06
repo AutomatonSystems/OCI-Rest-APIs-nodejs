@@ -1,6 +1,6 @@
 {
   "name": "automaton-oci",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Oracle Cloud Infrastructure REST APIs implemented in node.js.",
   "main": "oci.js",
   "directories": {
