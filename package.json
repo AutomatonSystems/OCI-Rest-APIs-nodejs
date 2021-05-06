@@ -1,5 +1,5 @@
 {
-  "name": "oci-rest-apis-nodejs",
+  "name": "automaton-oci",
   "version": "0.0.1",
   "description": "Oracle Cloud Infrastructure REST APIs implemented in node.js.",
   "main": "oci.js",
@@ -32,7 +32,7 @@
   "contributors": [
     "Adrian Png (https://github.com/fuzziebrain)"
   ],
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fuzziebrain/OCI-Rest-APIs-nodejs/issues"
   },
